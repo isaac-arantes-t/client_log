@@ -26,7 +26,7 @@ ul li {
 }
 
 .fa-solid:hover {
-    color: rgb(243, 86, 183);
+    color: black;
     transition: 0.3s;
 }
 /*fim barra lateral*/
@@ -35,28 +35,86 @@ ul li {
 .all {
     width: 100%;
     height: 100vh;
-    background-color: gray;
     display: grid;
-    grid-template-rows: repeat(8, 3fr);
+    grid-template-rows: repeat(8, 5fr);
 }
 
 .form_ {
-    grid-column: 2;
-    grid-row: 4;
-    background-color: blue;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.form-control input {
+    padding: 20px 15%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    float: left;
+}
+
+.form-control {
+    display: flex;
 }
 
 .toolbar {
     display: flex;
     grid-column: 2;
-    grid-row: 3;
-    background-color: red;
+    grid-row: 2;
 }
 
 .todo-list {
     grid-column: 2;
-    grid-row: 5;
-    background-color: yellowgreen;
+    grid-row: 3;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.todo-list .fa-solid {
+    color: black;
+    font-size: 1.1rem;
+}
+
+.toolbar input{
+    padding: 20px 15%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    float: right;
+}
+
+.search form {
+    display: flex;
+}
+
+.erase-button, .plus {
+    padding: 20px;
+    background-color: rgb(243, 86, 183);
+    border: none;
+}
+
+.erase-button:hover {
+    opacity: 0.8;
+}
+
+.fa-delete-left, .fa-square-plus {
+    font-size: 1.3rem;
+}
+
+.filter {
+    margin-left: 8%;
+}
+
+.filter select {
+    border-radius: 3px;
+    outline: none;
+    padding: 5px;
+}
+
+.h1-all {
+    z-index: 3;
+    grid-column: 2;
+    margin-top: 10%;
+}
 /*fim direita*/

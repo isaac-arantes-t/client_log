@@ -1,0 +1,31 @@
+@import url(resets.css);
+
+/*barra lateral*/
+.left {
+    background-color: rgb(255, 116, 202);
+    height: 100vh;
+    width: 12%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.left_ul {
+    line-height: 480%;
+    position: relative;
+    grid-row: 2;
+}
+
+ul li {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.fa-solid{
+    color: white;
+}
+
+.fa-solid:hover {
+    color: rgb(243, 86, 183);
+    transition: 0.3s;
+}
+/*fim barra lateral*/

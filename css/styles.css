@@ -117,4 +117,8 @@ ul li {
     grid-column: 2;
     margin-top: 10%;
 }
+
+.selected-icon {
+    color: black;
+}
 /*fim direita*/

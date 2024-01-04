@@ -1,0 +1,146 @@
+@import url(resets.css);
+
+/*barra lateral*/
+.left {
+    background-color: rgb(255, 116, 202);
+    height: 100vh;
+    width: 12%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    position: absolute;
+}
+
+.left_ul {
+    line-height: 480%;
+    position: relative;
+    grid-row: 2;
+}
+
+ul li {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.fa-solid{
+    color: white;
+}
+
+.fa-solid:hover {
+    color: black;
+    transition: 0.3s;
+}
+/*fim barra lateral*/
+
+/*direita*/
+.all {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(8, 5fr);
+}
+
+.form_ {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.form-control input {
+    padding: 20px 15%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    float: left;
+}
+
+.form-control {
+    display: flex;
+}
+
+.toolbar {
+    display: flex;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.clientes {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.todo-list {
+    padding: 20px;
+    width: 130%;
+    margin-bottom: 8%;
+    background-color: #cccccc65;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.todo-list .fa-solid {
+    color: black;
+    font-size: 1.1rem;
+}
+
+.toolbar input{
+    padding: 20px 15%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    float: right;
+}
+
+.search form {
+    display: flex;
+}
+
+.erase-button, .plus {
+    padding: 20px;
+    background-color: rgb(243, 86, 183);
+    border: none;
+}
+
+.erase-button:hover {
+    opacity: 0.8;
+}
+
+.fa-delete-left, .fa-square-plus {
+    font-size: 1.3rem;
+}
+
+.filter {
+    margin-left: 8%;
+}
+
+.filter select {
+    border-radius: 3px;
+    outline: none;
+    padding: 5px;
+}
+
+.h1-all {
+    z-index: 3;
+    grid-column: 2;
+    margin-top: 10%;
+}
+
+.selected-icon {
+    color: black;
+}
+
+.buttons-todo{
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+}
+
+.buttons-todo button .fa-solid {
+    color: black;
+}
+
+.buttons-todo button {
+    border: none;
+    background-color: transparent;
+}
+/*fim direita*/
